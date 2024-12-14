@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Iceland&family=Mogra&family=Rubik+Dirt&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="image.js" defer></script>
+    <script src="time.js" defer></script>
+    <script src="goal.js" defer></script>
+    <script src="quote.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main id="main-container">
+        <div id="clock-container">
+            <div class="clock-display">
+                <span class="container"></span>
+                <h1 class="clock-number"></h1>
+                <span class="container"></span>
+            </div>
+        </div>
+
+        <div id="greeting-container">
+            <form id="login-form" class="hidden">
+                <input type="text" placeholder="What us your name?">
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+        </div>
+
+        <div id="focus-container">
+            <h1 id="focus-text">What is your main goal for today?</h1>
+            <form id="focus-form" class="hidden">
+                <input type="text" id="focus-input">
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+        <div id="quote-container">
+            <h2 id="quote"></h2>
+            <form id="add-quote-form">
+                <input type="text" class="add-quote" placeholder="Add quote here">
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </main>
+
+    <div id="task-container">
+        <div class="task-list">
+            <h2>Add your goals for today?</h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your tasks">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
